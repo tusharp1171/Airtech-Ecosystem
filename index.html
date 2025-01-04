@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtech Ecosystem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar with White Background -->
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <!-- Navbar Brand -->
+          <a class="navbar-brand" href="#">Airtech Ecosystem</a>
+      
+          <!-- Toggler Button (Visible only on small screens) -->
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Full Menu (Visible on large screens) -->
+          <div class="d-none d-lg-block">
+            <ul class="navbar-nav flex-row">
+              <li class="nav-item  me-3">
+                <a class="nav-link active" aria-current="page" href="AboutUs.html">About</a>
+              </li>
+              <li class="nav-item  me-3">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item  me-3">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+              
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Offcanvas Menu (Visible only on small screens) -->
+          <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="AboutUs.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      
+    
+      
+    <!-- Hero Section -->
+    <div class="hero-section position-relative"style="margin-top: 80px;">
+        <!-- Bootstrap Carousel for Image Slider -->
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/hero-image1.jpg" alt="Hero Image 1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero-image2.jpg" alt="Hero Image 2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero-image3.jpg" alt="Hero Image 3" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero-image4.jpg" alt="Hero Image 4" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero-image5.jpg" alt="Hero Image 5" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero-image6.jpg" alt="Hero Image 6" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Hero Text over Carousel Images -->
+        <div class="hero-text position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="animate__animated animate__fadeInDown">Welcome to Airtech Ecosystem</h1>
+            <p class="animate__animated animate__fadeInUp">Specialists in Solar Cold Storage, Factory Insulation, Clean Rooms, and more.</p>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <section id="services" class="py-4 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Our Services</h2>
+            <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="service-box text-center">
+                                    <img src="images/service-1.jpg" alt="Solar Cold Storage" class="service-img">
+                                    <div class="service-content">
+                                        <h5 class="service-title">Integrated Solar Cold Storage</h5>
+                                        <p class="service-text">Innovative solutions for sustainable cold storage with solar energy integration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="service-box text-center">
+                                    <img src="images/service-21.jpg" alt="Partition & Ceiling" class="service-img">
+                                    <div class="service-content">
+                                        <h5 class="service-title">Wall Partition & Ceiling</h5>
+                                        <p class="service-text">PUF/PIR panels for roofing, partition walls, and clean room ceilings.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="service-box text-center">
+                                    <img src="images/service-3.jpg" alt="Soundproof Offices" class="service-img">
+                                    <div class="service-content">
+                                        <h5 class="service-title">Soundproof Offices</h5>
+                                        <p class="service-text">Advanced soundproofing solutions for quiet and productive workspaces.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="service-box text-center">
+                                    <img src="images/service-4.jpg" alt="Factory Insulation" class="service-img">
+                                    <div class="service-content">
+                                        <h5 class="service-title">Factory Insulation</h5>
+                                        <p class="service-text">Expert solutions for thermal insulation in industrial and factory settings.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="service-box text-center">
+                                    <img src="images/service-5.jpg" alt="Clean Rooms" class="service-img">
+                                    <div class="service-content">
+                                        <h5 class="service-title">Clean Rooms</h5>
+                                        <p class="service-text">Design and build cleanrooms with industry-standard PUF and PIR panels.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="service-box text-center">
+                                    <img src="images/service-6.jpg" alt="Refrigeration Systems" class="service-img">
+                                    <div class="service-content">
+                                        <h5 class="service-title">Refrigeration Systems</h5>
+                                        <p class="service-text">Custom-built refrigeration systems tailored to your specific needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Wall, Partition, Ceiling, Roofing Panels & Prefab Structure Section -->
+    <section id="panels" class="py-4 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Wall, Partition, Ceiling, Roofing Panels & Prefab Structure</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="lead">IFPL is an organization set up by an expert group of professionals with vast experience in diversified technical segments. We offer a wide range of PUF/PIR panels from both Discontinuous and Continuous lines for various applications.</p>
+                    <p>Our products are designed to meet the highest standards for a variety of uses, including:</p>
+                    <ul>
+                        <li>Shelters</li>
+                        <li>Cold Rooms</li>
+                        <li>Cold and Solar Cold Storage</li>
+                        <li>Clean Rooms</li>
+                        <li>Site Offices</li>
+                        <li>Prefabricated Buildings/Houses</li>
+                        <li>Roofing Panels</li>
+                        <li>Partition Walls</li>
+                        <li>Walkable False Ceilings</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/panels-image.jpg" alt="PUF/PIR Panels" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Manufacturing Capabilities Section -->
+<!-- Manufacturing Capabilities Section -->
+<section id="manufacturing-capabilities" class="py-4 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Manufacturing Capabilities</h2>
+        <div class="row align-items-center">
+            <!-- Image Column (Left side on larger screens) -->
+            <div class="col-md-6 order-md-1 mb-4 mb-md-0">
+                <img src="images/manufacturing-plant.jpg" alt="Manufacturing Plant" class="img-fluid rounded">
+            </div>
+            <!-- Text Content Column (Right side on larger screens) -->
+            <div class="col-md-6 order-md-2">
+                <p class="text-justify">
+                    Our modern Manufacturing Plant is located at Greater Pune, Maharashtra, India, and is equipped with advanced technology. 
+                    We have a high-pressure foaming line with a production capacity of 4.50 lakhs sq.m per annum of PUF panels from the discontinuous line and another 5 lakhs sq.m per annum from the continuous line.
+                </p>
+                <p class="text-justify">
+                    These capabilities enable us to execute turnkey projects of all sizes, including Prefabricated buildings, Houses, Cold Storage, Clean Rooms, Factories, and more. Our technology and capacity make us a reliable partner in the execution of large-scale projects.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wall, Partition, Ceiling, Roofing Panels & Prefab Structure Section -->
+<section id="wall-partition-ceiling" class="py-4 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Our Modular Building Solutions</h2>
+        <div class="row align-items-center">
+            <!-- Text Content Column (Left side on larger screens) -->
+            <div class="col-md-6">
+                <p class="text-justify">
+                    We have an in-house consultancy and design studio, which includes Project Consultancies and project management, meeting national and international norms of quality and safety while executing Projects.
+                </p>
+                <p class="text-justify">
+                    We offer a wide range of PUF/PIR panels for various applications such as Shelters, Cold Rooms, Solar Cold Storage, Clean Rooms, Site Offices, Prefabricated Buildings/Houses, and other applications for Roofing Panels, Partition Walls, Walkable False Ceilings, etc.
+                </p>
+            </div>
+            <!-- Image Column (Right side on larger screens) -->
+            <div class="col-md-6">
+                <img src="images/partition-ceiling-panels.jpg" alt="Wall, Partition, Ceiling, Roofing Panels" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="puf-pir-panels" class="py-4 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">PUF/PIR Insulated Wall & Partition Panels</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-1">
+                <img src="images/puf-pir-panels.jpg" alt="PUF/PIR Insulated Wall & Partition Panels" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 order-md-2">
+                <h4>Product Technical Information</h4>
+                <ul class="custom-bullets">
+                    <li><strong>Suitable for internal partition wall and ceilings</strong></li>
+                    <li><strong>Available in length up to 14 mtr</strong></li>
+                    <li><strong>Comprises an insulated core with a steel top sheet and lower sheet</strong></li>
+                    <li><strong>Can be easily integrated with doors, and windows</strong></li>
+                    <li><strong>Can be easily integrated with other wall opening arrangements</strong></li>
+                    <li><strong>PUR/PIR, High-performance IPN Insulation core</strong></li>
+                    <li><strong>Wall applications</strong></li>
+                    <li><strong>Core Thickness: 30, 40, 50, 60, 80, and 100 mm & 120, 150 mm</strong></li>
+                    <li><strong>Modular width: 1000 mm</strong></li>
+                    <li><strong>Standard lengths in the range of 12 m</strong></li>
+                    <li><strong>Fixing: Tongue and Groove interlocking and sealed joints</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="thermal-insulation" class="py-4 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Thermal Insulation & Core Thickness</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>Core Thickness (mm)</th>
+                        <th>U-Value (W/sq m K)</th>
+                        <th>R-Value (sq m K/W)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>30</td>
+                        <td>0.54</td>
+                        <td>1.85</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>0.46</td>
+                        <td>2.17</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>0.39</td>
+                        <td>2.56</td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>0.31</td>
+                        <td>3.23</td>
+                    </tr>
+                    <tr>
+                        <td>80</td>
+                        <td>0.25</td>
+                        <td>-</td> <!-- No R-value provided for 80mm -->
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>0.2</td>
+                        <td>-</td> <!-- No R-value provided for 100mm -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="other-products" class="py-4 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Other Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product-box text-center">
+                    <img src="images/puf-pir-slab.jpg" alt="PUF/PIR Slab" class="img-fluid rounded">
+                    <h5 class="product-title mt-3">PUF/PIR Slab</h5>
+                    <p class="product-description">High-performance slabs for insulation in various applications, including walls, roofs, and partitions.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-box text-center">
+                    <img src="images/solar-cold-storage.jpg" alt="Solar Cold Storage" class="img-fluid rounded">
+                    <h5 class="product-title mt-3">Solar Cold Storage</h5>
+                    <p class="product-description">Sustainable cold storage solutions powered by solar energy for efficient temperature control.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-box text-center">
+                    <img src="images/installation-service.jpg" alt="Installation Service" class="img-fluid rounded">
+                    <h5 class="product-title mt-3">Installation Service</h5>
+                    <p class="product-description">Professional installation services for all our products, ensuring top-quality setup and operation.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="product-box text-center">
+                    <img src="images/prefab-structure.jpg" alt="Prefab Structure" class="img-fluid rounded">
+                    <h5 class="product-title mt-3">Prefab Structure</h5>
+                    <p class="product-description">Custom-designed prefabricated structures for a variety of commercial and industrial needs.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="product-box text-center">
+                    <img src="images/clean-room.jpg" alt="Clean Room" class="img-fluid rounded">
+                    <h5 class="product-title mt-3">Clean Room</h5>
+                    <p class="product-description">State-of-the-art clean rooms designed to meet industry standards for controlled environments.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="product-box text-center">
+                    <img src="images/doors.jpg" alt="Doors" class="img-fluid rounded">
+                    <h5 class="product-title mt-3">Doors</h5>
+                    <p class="product-description">Durable and insulated doors for clean rooms, cold storage, and other high-performance environments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Contact Section -->
+   <!-- Contact Section (Get in Touch) -->
+   <section id="contact" class="contact-info text-center py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title mb-4">Get in Touch</h2>
+        <p class="lead mb-4">We’d love to hear from you! Whether you have a question, feedback, or want to work with us, feel free to contact us.</p>
+        
+        <div class="row">
+            <!-- Address -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="contact-item bg-white p-4 rounded shadow d-flex flex-column justify-content-between h-100">
+                    <i class="fas fa-map-marker-alt fa-2x mb-3 text-primary"></i>
+                    <h5 class="contact-title">Our Address</h5>
+                    <p>E21/22, T Block, Near Lear Corporation, Bhosari MIDC, Pune - 411026</p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="contact-item bg-white p-4 rounded shadow d-flex flex-column justify-content-between h-100">
+                    <i class="fas fa-envelope fa-2x mb-3 text-primary"></i>
+                    <h5 class="contact-title">Email Us</h5>
+                    <p><a href="mailto:airtechecosystem@gmail.com" class="text-decoration-none text-primary">airtechecosystem@gmail.com</a></p>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="contact-item bg-white p-4 rounded shadow d-flex flex-column justify-content-between h-100">
+                    <i class="fas fa-phone-alt fa-2x mb-3 text-primary"></i>
+                    <h5 class="contact-title">Call Us</h5>
+                    <p><a href="tel:+919529174496" class="text-decoration-none text-primary">+91 9529174496</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-icons mt-4 d-flex flex-wrap justify-content-center">
+            <!-- First row of social icons -->
+            <a href="#" class="mx-3 text-primary"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="#" class="mx-3 text-primary"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="mx-3 text-primary"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            
+            <!-- Second row of social icons (added Instagram and YouTube) -->
+            <a href="#" class="mx-3 text-primary"><i class="fab fa-instagram fa-2x"></i></a>
+            <!-- <a href="#" class="mx-3 text-primary"><i class="fab fa-youtube fa-2x"></i></a> -->
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-4">
+                <h5 class="footer-title mb-3">Contact Information</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i>E21/22, T Block, Near Lear Corporation, Bhosari MIDC, Pune - 411026</li>
+                    <li><i class="fas fa-envelope text-primary me-2"></i><a href="mailto:airtechecosystem@gmail.com" class="text-white text-decoration-none">airtechecosystem@gmail.com</a></li>
+                    <li><i class="fas fa-phone-alt text-primary me-2"></i><a href="tel:+919529174496" class="text-white text-decoration-none">+91 9529174496</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="col-md-4 mb-4">
+                <!-- <h5 class="footer-title mb-3">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="text-white mx-2" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-white mx-2" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-white mx-2" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="text-white mx-2" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-white mx-2" target="_blank"><i class="fa-brands fa-youtube"></i></a> 
+                </div> -->
+            </div>
+            
+            
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h5 class="footer-title mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Portfolio</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <p class="small">© 2025 Airtech Ecosystem. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>

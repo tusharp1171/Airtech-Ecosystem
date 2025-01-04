@@ -1,0 +1,660 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Smaller Navbar with White Background */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #f0f0f0;
+    color: #007BFF;
+  }
+  
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #ffffff;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .nav-toggle {
+      display: flex;
+    }
+  }
+
+/* Hero Section */
+.hero-section img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Section Titles */
+.section-title {
+    color: #333;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Services Section */
+.service-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-info {
+    background: #f8f9fa;
+    border-top: 2px solid #ddd;
+}
+
+.contact-info p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+    background: #343a40;
+    color: #fff;
+}
+
+/* Hover shadow class */
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+    .service-img {
+        height: 150px;
+    }
+    .navbar-light .navbar-brand {
+        font-size: 1.1rem;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 2rem;  /* Slightly smaller on medium devices (tablets) */
+    }
+    .hero-text p {
+        font-size: 1.1rem;  /* Slightly smaller text */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 1.6rem;  /* Smaller font size for mobile devices */
+    }
+    .hero-text p {
+        font-size: 1rem;  /* Smaller text for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.4rem;  /* Even smaller for very small devices */
+    }
+    .hero-text p {
+        font-size: 0.9rem;  /* Smaller text for small screens */
+    }
+}
+
+
+
+
+/* Wall, Partition, Ceiling, Roofing Panels & Prefab Structure Section */
+#panels {
+    background-color: #f8f9fa; /* Light background for the section */
+    padding: 60px 0;
+}
+
+#panels .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#panels p.lead {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+#panels ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#panels ul li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#panels img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#panels ul {
+    list-style-type: disc; /* Ensures bullets appear */
+    padding-left: 20px; /* Adds space to the left of the list */
+}
+
+#panels ul li {
+    font-size: 1rem; /* Adjusts the font size of list items */
+    color: #555; /* Customizes the color of the list items */
+}
+
+
+@media (max-width: 768px) {
+    #panels .row {
+        flex-direction: column; /* Stack images and text on smaller screens */
+    }
+}
+
+
+/* Manufacturing Capabilities Section */
+#manufacturing-capabilities {
+    background-color: #f8f9fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Section Title */
+#manufacturing-capabilities .section-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Paragraph Styles */
+#manufacturing-capabilities p {
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+}
+
+/* Image Styles */
+#manufacturing-capabilities img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    /* On small screens, reverse the order of text and image */
+    #manufacturing-capabilities .row {
+        flex-direction: column-reverse;
+    }
+    
+    #manufacturing-capabilities img {
+        max-height: 250px; /* Reduce image height on smaller screens */
+    }
+}
+
+
+/* Wall, Partition, Ceiling, Roofing Panels & Prefab Structure Section */
+/* Wall, Partition, Ceiling, Roofing Panels Section */
+#wall-partition-ceiling {
+    background-color: #f8f9fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#wall-partition-ceiling .section-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+}
+
+#wall-partition-ceiling p {
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+}
+
+#wall-partition-ceiling img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* PUF/PIR Insulated Wall & Partition Panels Section */
+/* PUF/PIR Insulated Wall & Partition Panels Section */
+#puf-pir-panels {
+    background-color: #f8f9fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#puf-pir-panels .section-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+}
+
+#puf-pir-panels h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Custom styled bullet points */
+#puf-pir-panels .custom-bullets {
+    font-size: 1rem;
+    color: #555;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#puf-pir-panels .custom-bullets li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 25px; /* Space for bullet */
+}
+
+#puf-pir-panels .custom-bullets li:before {
+    content: '\2022'; /* Unicode for bullet */
+    color: #0d6efd; /* Blue color for bullet */
+    font-size: 1.5rem; /* Increase bullet size */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#puf-pir-panels img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Layout */
+@media (max-width: 767px) {
+    #puf-pir-panels .row {
+        flex-direction: column-reverse;
+    }
+}
+
+
+/* Thermal Insulation Table Styling */
+/* Thermal Insulation Table Styling */
+#thermal-insulation {
+    background-color: #f8f9fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#thermal-insulation .section-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+}
+
+.table-responsive {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0d6efd;
+    color: white;
+    font-size: 1.1rem;
+}
+
+table td {
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #e9ecef;
+}
+
+
+/* Other Products Section Styling */
+#other-products {
+    background-color: #f8f9fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#other-products .section-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+}
+
+.product-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-title {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.product-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .product-box {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* General Section Styles */
+#contact {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+/* Contact Item Styles */
+.contact-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.contact-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.contact-item p {
+    color: #6c757d;
+    font-size: 1rem;
+}
+
+.contact-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 767px) {
+    /* For small screens, stack the contact items */
+    .contact-item {
+        padding: 20px; /* Reduced padding for mobile */
+    }
+
+    .social-icons a {
+        font-size: 1.25rem; /* Smaller social icon size on mobile */
+        margin: 10px 5px;
+    }
+
+    .contact-title {
+        font-size: 1.25rem; /* Smaller font size for mobile */
+    }
+}
+
+/* Additional responsiveness for medium screens */
+@media (max-width: 991px) {
+    .contact-item {
+        padding: 25px; /* Padding adjustment for medium screens */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer .list-unstyled {
+    padding-left: 0;
+}
+
+.footer .list-unstyled li {
+    margin: 10px 0;
+}
+
+.footer .list-unstyled li a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.footer .list-unstyled li a:hover {
+    color: #007bff;
+}
+
+.footer .social-icons a {
+    color: #f8f9fa;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer p {
+    color: #ccc;
+    font-size: 0.875rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contact-item {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+    }
+
+    .footer p {
+        font-size: 0.75rem;
+    }
+
+    .footer .list-unstyled li {
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-icons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer .social-icons a {
+        margin: 0 8px;
+    }
+}
