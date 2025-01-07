@@ -1,0 +1,167 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f0faff;
+}
+
+/* Navigation Bar */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Logo */
+.nav .logo {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Navigation Links */
+.nav .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav .nav-links a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+.nav.openSearch .nav-links a {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Search Box */
+.nav .search-box {
+  position: absolute;
+  right: 250px;
+  height: 45px;
+  max-width: 555px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s linear;
+}
+
+.nav.openSearch .search-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  padding: 0 15px 0 45px;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+/* Search Icon */
+.nav .search-icon {
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Mobile View - Adjustments for Responsive Design */
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+  display: none;
+}
+
+@media screen and (max-width: 1160px) {
+  .nav {
+    padding: 15px 100px;
+  }
+
+  .nav .search-box {
+    right: 150px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .nav {
+    padding: 15px 50px;
+  }
+
+  .nav .search-box {
+    right: 100px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Toggle Button (Mobile) */
+  .nav .navOpenBtn,
+  .nav .navCloseBtn {
+    display: block;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Navigation Links */
+  .nav .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    max-width: 280px;
+    width: 100%;
+    padding-top: 100px;
+    gap: 30px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    z-index: 100;
+  }
+
+  .nav.openNav .nav-links {
+    left: 0;
+  }
+
+  /* Search Box - Mobile */
+  .nav .search-box {
+    top: calc(100% + 10px);
+    max-width: calc(100% - 20px);
+    right: 50%;
+    transform: translateX(50%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav {
+    padding: 15px 20px;
+  }
+}

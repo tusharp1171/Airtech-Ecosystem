@@ -1,2 +1,0 @@
-# Airtech-Ecosystem
-Airtech Ecosystem 

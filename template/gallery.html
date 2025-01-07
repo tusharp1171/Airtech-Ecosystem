@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Airtech Ecosystem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom CSS for Gallery Styling */
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .btn-link {
+            color: #007bff;
+            font-size: 0.9rem;
+        }
+
+        .btn-link:hover {
+            text-decoration: underline;
+        }
+
+        .short-description {
+            font-size: 0.9rem;
+        }
+
+        .read-more {
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .card-img-top {
+                height: 150px; /* Make the images smaller on mobile */
+            }
+
+            .short-description {
+                font-size: 0.8rem;
+            }
+
+            .read-more {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Airtech Ecosystem</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Gallery</h2>
+            <div class="row g-4">
+                <!-- Gallery Item -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="gallery images/photo1.jpg" class="card-img-top" alt="Photo 1">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="short-description">
+                                    Prevents freezing and transfers heat efficiently.<br>
+                                    <span class="read-more text-primary" data-bs-toggle="collapse"
+                                        data-bs-target="#moreDescription1" aria-expanded="false"
+                                        aria-controls="moreDescription1">Read More...</span>
+                                </span>
+                                <span class="long-description collapse" id="moreDescription1">
+                                    <strong>Ethylene Glycol:</strong> Ensures freeze protection and improves system efficiency.<br>
+                                    <strong>Freeze Glycol:</strong> Maintains functionality in cold climates.<br>
+                                    <strong>Rust Protection:</strong> Protects against corrosion, enhancing durability.<br>
+                                    <strong>Lando:</strong> Reliable, premium HVAC brand.<br>
+                                    <strong>Efficiency:</strong> Optimizes performance and saves energy.<br>
+                                    <strong>Rust Prevention:</strong> Prevents rust buildup for longer system life.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="gallery images/photo2.jpg" class="card-img-top" alt="Photo 2">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="short-description">
+                                    Sandwich roof & wall panel installation system.<br>
+                                </span>
+                                <span class="read-more text-primary" data-bs-toggle="collapse"
+                                    data-bs-target="#moreDescription2" aria-expanded="false"
+                                    aria-controls="moreDescription2">Read More...</span>
+                                
+                                <span class="long-description collapse" id="moreDescription2">
+                                    Maintains HVAC functionality and optimizes energy performance.<br><br>
+                                    <strong>Roof Panels:</strong> Shown with screws and ridge flashing.<br>
+                                    <strong>Wall Panels:</strong> Illustrated with sealing screws, drip flashing, angle profile, and support angle.<br>
+                                    <strong>Purlin:</strong> The structural support for the panels.<br>
+                                    <strong>Column:</strong> Supporting the structure.<br>
+                                    <strong>Window Sill Flashing:</strong> Protecting the window from water damage.<br>
+                                    <strong>External Corner Flashing:</strong> Ensuring watertightness at corners.<br>
+                                    <strong>Verge Flashing:</strong> Protecting the roof edge.<br>
+                                    <strong>Ridge Ventilator:</strong> Allowing for ventilation.<br>
+                                    <strong>Gutter:</strong> Collecting rainwater.<br>
+                                    <strong>PUR Spray Foam (OCF):</strong> Used for insulation and sealing.<br><br>
+                                    <strong>Additional Details:</strong><br>
+                                    <strong>Staggered Fasteners:</strong> For better structural integrity.<br>
+                                    <strong>Profile Filter and Toothed Strip:</strong> For precise panel alignment.<br>
+                                    <strong>Sealing Strip:</strong> For weatherproofing.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="gallery images/photo4.jpg" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="short-description">
+
+                                    Tilt-Adjustable Bracket, 30-Year Warranty Solar<br>
+                                      </span>
+                                <span class="read-more text-primary" data-bs-toggle="collapse"
+                                    data-bs-target="#moreDescription" aria-expanded="false"
+                                    aria-controls="moreDescription">Read More...</span>
+                
+                                <span class="long-description collapse" id="moreDescription">
+                                    Panels, Reinforced Wall Insulation, Separate Cold Storage, Insulated Swing Doors and Strip Curtains
+                                    <strong>Tilt-Adjustable Bracket:</strong> Allows solar panels to be installed at optimal angles based on geographical conditions, maximizing energy generation.<br>
+                                    <strong>Original Solar Panels with 30-Year Warranty:</strong> High-efficiency solar panels that provide reliable power generation with a 30-year warranty for long-term performance.<br>
+                                    <strong>Reinforced Wall Insulation (100-120mm):</strong> Thick insulation reduces heat loss, improving energy efficiency and minimizing heating or cooling needs.<br>
+                                    <strong>Cold Storage Separated from Control Room:</strong> Optimizes space by keeping the cold storage room separate, improving energy usage for power generation.<br>
+                                    <strong>Insulated Swing Doors with Strip Curtains:</strong> High-performance doors and strip curtains limit heat entry, maintaining cold room temperature efficiently.
+                            
+                                    <strong>Tilt-Adjustable Bracket:</strong> Solar panels can be installed at optimal angles based on geographical conditions, maximizing energy generation efficiency. This adjustable feature ensures that panels are always positioned for the best sunlight exposure.<br><br>
+                                    <strong>Original Solar Panels with 30-Year Warranty:</strong> These high-efficiency solar panels are designed to provide reliable and consistent power generation over the long term. With a 30-year warranty, you are assured of long-term performance and support.<br><br>
+                                    <strong>Reinforced Wall Insulation (100-120mm):</strong> The thick insulation used in these panels reduces heat loss, improving the building’s overall energy efficiency. It minimizes the need for additional heating or cooling, ensuring lower energy consumption and cost savings.<br><br>
+                                    <strong>Cold Storage Separated from Control Room:</strong> By keeping the cold storage room separate from the control room, this feature optimizes space and energy usage, particularly beneficial for systems focused on energy generation and storage.<br><br>
+                                    <strong>Insulated Swing Doors with Strip Curtains:</strong> These high-performance insulated doors and strip curtains are specifically designed to prevent heat from entering, ensuring that the cold room temperature remains stable and energy-efficient. It also helps in reducing the operational load on refrigeration systems.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                <!-- Gallery Item -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="gallery images/photo3.jpg" class="card-img-top" alt="Photo 3">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="short-description">
+                                    The Refrigeration System is designed <br>
+                                </span>
+                                <span class="read-more text-primary" data-bs-toggle="collapse"
+                                    data-bs-target="#moreDescription3" aria-expanded="false"
+                                    aria-controls="moreDescription3">Read More...</span>
+                                <span class="long-description collapse" id="moreDescription3">
+                                    to maintain optimal cold storage conditions
+                                    <strong>Refrigeration System:</strong> Components that ensure temperature control.<br><br>
+                                    <strong>Condensing Unit:</strong> The heart of the system.<br>
+                                    <strong>Evaporator:</strong> Absorbs heat to maintain cold storage.<br><br>
+                                    <strong>Cold Room Structure:</strong> Modular panels, doors, and essential components.<br><br>
+                                    <strong>Control and Monitoring:</strong> Electric box ensures precise control of system.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src="images/photo4.jpg" class="card-img-top" alt="Rust Protection">
+                        <div class="card-body">
+                            <h5 class="card-title">Rust Protection</h5>
+                            <p class="card-text">
+                                <span class="short-description">
+                                    Prevents rust buildup and extends system life.<br>
+                                    <span class="read-more text-primary" data-bs-toggle="collapse"
+                                        data-bs-target="#moreDescription4" aria-expanded="false"
+                                        aria-controls="moreDescription4">Read More...</span>
+                                </span>
+                                <span class="long-description collapse" id="moreDescription4">
+                                    Reliable, premium HVAC systems with superior durability.<br><br>
+                                    Ensures rust prevention and longevity of the system components for optimal performance.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Airtech Ecosystem. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
